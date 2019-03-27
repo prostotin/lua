@@ -12,7 +12,6 @@ localPlayer = entities.getLocalPlayer();
 --   8: Green
 --   9: Aqua
 --   10: Pink
-
 function healthHud()
   if(entity ~= nil) then
   health = localPlayer.GetHealth();
@@ -26,15 +25,8 @@ elseif(health > 49) then
   client.Command("cl_hud_color 6") --   6: Orange
 else
   client.Command("cl_hud_color 5") --   5: Red
-
 end
-
 end
-
-
-
 end
-
-
 
 callbacks.Register( "Draw", "healthHud", healthHud);
